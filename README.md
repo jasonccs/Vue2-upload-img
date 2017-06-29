@@ -182,7 +182,7 @@ url="http://101.198.151.190/api/upload2.php" >
 </vue-core-image-upload>
 
 
-###响应事件
+##响应事件
 
 我们在上传的不同阶段指定了不同的派发事件，你可以绑定每个事件的响应方法，实现对于流程的控制。
 
@@ -203,6 +203,7 @@ errorhandle
 当图片上传发生错误的时候触发，会返回错误状态信息
 
 Code Example
+
 ### Contributions
 
 Your contributions and suggestions are welcome 😄😄😄💐💐💐.
