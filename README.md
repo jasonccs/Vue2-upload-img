@@ -162,7 +162,7 @@ new Vue({
   </tbody>
 </table>
 
-上传多个文件
+###上传多个文件
 multiple
 
 你可以使用 multiple 属性设置为true来实现多文件的上传。需要注意的是，你设置了该属性后,服务端收到文件上传的字段数据会是一个数组。
@@ -179,6 +179,28 @@ class="btn btn-primary"
 :multiple-size="4"
 url="http://101.198.151.190/api/upload2.php" >
 </vue-core-image-upload>
+
+
+###响应事件
+我们在上传的不同阶段指定了不同的派发事件，你可以绑定每个事件的响应方法，实现对于流程的控制。
+
+imageuploaded
+
+当图片上传完，会调用该事件绑定的函数，并且用户可以获取到服务端返回的数据。
+
+imagechanged
+
+当input框改变选择图片时候触发，会返回input的获取的图片数据
+
+imageuploading
+
+当图片上传过程中触发，你可以自定义你需要处理的内容比如显示加载动画等。
+
+errorhandle
+
+当图片上传发生错误的时候触发，会返回错误状态信息
+
+Code Example
 ### Contributions
 
 Your contributions and suggestions are welcome 😄😄😄💐💐💐.
